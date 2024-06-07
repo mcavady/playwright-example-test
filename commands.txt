@@ -1,0 +1,11 @@
+# manual
+https://playwright.dev/python/
+
+# run test codegen
+python -m playwright codegen jsmcavady.co.uk
+
+# run test
+python -m pytest --browser chromium --tracing retain-on-failure
+
+# playback test
+python -m playwright show-trace trace.zip
